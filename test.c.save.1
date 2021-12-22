@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void main()
+{
+	int item[]={9,4,2,7,3,1,6}, set = 0; 
+	for(int x=0; x<6;x++)
+	{
+		int select = item[set];
+		for(int y = set; y < 6 ; y++)
+		{
+			printf("%d <= %d", item[y], select);			if(item[y] <= select)
+			{
+				select = item[x];	 
+			}
+		}
+		printf("%d\n",set);
+		set++;
+	}
+}
+
+
